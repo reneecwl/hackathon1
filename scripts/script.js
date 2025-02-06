@@ -1,14 +1,16 @@
 const cakesApi = new CakesApi();
-
+const form = document.querySelector(".form");
 const makeCard = (card, cardObj) => {
   card.innerHTML = `
     <img class="cakes-card__img" src="${cardObj.image}" alt="">
-    <p class="cake__difficulty">Difficulty: ${cardObj.difficulty}</p>
     <h3 class="cakes-card__heading">${cardObj.title}</h3>
-    <button class="button" id="${cardObj.id}"> See More</button>
+    <p class="cake__difficulty">Difficulty: ${cardObj.difficulty}</p>
+    <button class="button" id="${cardObj.id}"> See Recipe</button>
     `;
 };
-const allCakes = (async function () {
+const formOnSubmit = async function (event) {
+  event.preventDefault();
+  document.querySelector(".cakes").classList.remove("hidden");
   try {
     // const res = await cakesApi.getRandCakes();
     const cakesCards = document.querySelectorAll(".cakes-card");
@@ -124,7 +126,7 @@ const allCakes = (async function () {
           modal.appendChild(closeIcon);
           modal.innerHTML += `        
         <h4 class="cake__description">${cake.description}</h4>
-
+        <h4 class="cake__time--title">Time</h4>
         <p class="cake__time">${cake.time}</p>
 
         <div>
@@ -160,4 +162,6 @@ const allCakes = (async function () {
   } catch (error) {
     console.error(error);
   }
-})();
+};
+
+form.addEventListener("submit", formOnSubmit);

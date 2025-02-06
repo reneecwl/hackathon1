@@ -20,6 +20,10 @@
 
 .logo__container {
   padding-left: 2rem;
+
+  img {
+    height: 4rem;
+  }
 }
 
 .nav {
@@ -90,6 +94,7 @@ main {
   align-items: center;
   background-color: $beige;
   border-radius: 0 .5rem 0 0;
+  padding-bottom: 2rem;
 
   @include desktop {
     width: 50%;

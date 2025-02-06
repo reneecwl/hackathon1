@@ -1,5 +1,7 @@
-@use "../styles/partials/global";
-@use "../styles/partials/typography";
+@use "../styles/partials/global" as *;
+@use "../styles/partials/typography" as *;
+@use "../styles/partials/cake-cards" as *;
+@use "../styles/partials/modal" as *;
 
 
 .header {

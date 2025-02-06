@@ -26,86 +26,88 @@
     </header>
 
   <main>
-    <section class="hero">
-      <h1 class="main__title">The Great Hall of Cakes</h1>
-      <div class="content__container">
-        <div class="content__intro">
-          Welcome to The Great Hall of Cakes!Ever wondered what kind of cake
-          your wizarding soul craves? Our magical recipe generator whisks up a
-          custom cake based on your Hogwarts house, blood status, and even your
-          Patronus! Whether you're a Muggle-born baker or a pure-blood pastry
-          master, let the Sorting Hat of sweets decide your next dessert. No
-          spells required—just a sprinkle of curiosity!
+    <div class="great-hall">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">The Great Hall of Cakes</h1>
+          <div class="hero__desc">
+            Welcome to The Great Hall of Cakes!Ever wondered what kind of cake
+            your wizarding soul craves? Our magical recipe generator whisks up a
+            custom cake based on your Hogwarts house, blood status, and even your
+            Patronus! Whether you're a Muggle-born baker or a pure-blood pastry
+            master, let the Sorting Hat of sweets decide your next dessert. No
+            spells required—just a sprinkle of curiosity!
+          </div>
+      </section>
+      <section class="form">
+        <h2 class="form__title">Discover your cake!</h2>
+        <form id="" class="form__container">
+          <label for="type-select" class="form__label"
+            >Are you a Muggle or a Wizard?</label
+          >
+          <select class="form__field" name="types" id="type-select">
+            <option value="muggle">Muggle</option>
+            <option value="half-blood">Half-Blood</option>
+            <option value="pure-blood">Pure-Blood</option>
+          </select>
+          <label for="date">When is your birthday?</label>
+          <input class="form__field" type="date" name="date" id="date" />
+
+          <label for="house-select" class="form__label"
+            >Which house do you belong to?</label
+          >
+          <select class="form__field">
+            <option value="gryffindor">Gryffindor</option>
+            <option value="hufflepuff">Hufflepuff</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="ravenclaw">Ravenclaw</option>
+          </select>
+
+          <label for="subject-select" class="form__label"
+            >What is your favorite subject?</label
+          >
+          <select class="form__field">
+            <option value="dark-arts">Defence Against the Dark Arts</option>
+            <option value="Potions">Potions</option>
+            <option value="charms">Charms</option>
+            <option value="transfiguration">Transfiguration</option>
+          </select>
+
+          <label for="patronus-select" class="form__label"
+            >What is your Patronus?</label
+          >
+          <select class="form__field">
+            <option value="stag">Stag- Harry</option>
+            <option value="phoenix">Phoenix- Dumbledore</option>
+            <option value="otter">Otter- Hermione</option>
+            <option value="terrier">Jack Russell Terrier- Ron</option>
+            <option value="doe">Doe- Snape</option>
+            <option value="hare">Hare- Luna</option>
+            <option value="magpie">Magpie- The Weasley twins</option>
+            <option value="wolf">Wolf- Lupin</option>
+            <option value="doe">Doe- Cho Chang</option>
+          </select>
+          <label for="character-select" class="form__label"
+          >  Who is your favorite character?</label
+        >
+        <select class="form__field">
+          <option value="harry">Harry Potter</option>
+          <option value="albus">Albus Dumbledore</option>
+          <option value="voldemort">Voldemort</option>
+          <option value="ron">Ron Weasley</option>
+          <option value="hermione">Hermione Granger</option>
+          <option value="snape">Severus Snape</option>
+          <option value="luna">Luna Lovegood</option>
+          <option value="neville">Neville Longbottom</option>
+          <option value="hagrid">Rubeus Hagrid</option>         
+          <option value="sirius">Sirius Black</option>
+        </select>
+        
+          <button type="submit" class="form__button">GET ME MY CAKE</button>
+        </form>
         </div>
-    </section>
-    <section class="form">
-      <h2 class="form__title">Discover your cake!</h2>
-      <form id="" class="form__container">
-        <label for="type-select" class="form__label"
-          >Are you a Muggle or a Wizard?</label
-        >
-        <select class="form__field" name="types" id="type-select">
-          <option value="muggle">Muggle</option>
-          <option value="half-blood">Half-Blood</option>
-          <option value="pure-blood">Pure-Blood</option>
-        </select>
-        <label for="date">When is your birthday?</label>
-        <input class="form__field" type="date" name="date" id="date" />
-
-        <label for="house-select" class="form__label"
-          >Which house do you belong to?</label
-        >
-        <select class="form__field">
-          <option value="gryffindor">Gryffindor</option>
-          <option value="hufflepuff">Hufflepuff</option>
-          <option value="slytherin">Slytherin</option>
-          <option value="ravenclaw">Ravenclaw</option>
-        </select>
-
-        <label for="subject-select" class="form__label"
-          >What is your favorite subject?</label
-        >
-        <select class="form__field">
-          <option value="dark-arts">Defence Against the Dark Arts</option>
-          <option value="Potions">Potions</option>
-          <option value="charms">Charms</option>
-          <option value="transfiguration">Transfiguration</option>
-        </select>
-
-        <label for="patronus-select" class="form__label"
-          >What is your Patronus?</label
-        >
-        <select class="form__field">
-          <option value="stag">Stag- Harry</option>
-          <option value="phoenix">Phoenix- Dumbledore</option>
-          <option value="otter">Otter- Hermione</option>
-          <option value="terrier">Jack Russell Terrier- Ron</option>
-          <option value="doe">Doe- Snape</option>
-          <option value="hare">Hare- Luna</option>
-          <option value="magpie">Magpie- The Weasley twins</option>
-          <option value="wolf">Wolf- Lupin</option>
-          <option value="doe">Doe- Cho Chang</option>
-        </select>
-        <label for="character-select" class="form__label"
-        >  Who is your favorite character?</label
-      >
-      <select class="form__field">
-        <option value="harry">Harry Potter</option>
-        <option value="albus">Albus Dumbledore</option>
-        <option value="voldemort">Voldemort</option>
-        <option value="ron">Ron Weasley</option>
-        <option value="hermione">Hermione Granger</option>
-        <option value="snape">Severus Snape</option>
-        <option value="luna">Luna Lovegood</option>
-        <option value="neville">Neville Longbottom</option>
-        <option value="hagrid">Rubeus Hagrid</option>         
-        <option value="sirius">Sirius Black</option>
-      </select>
-      
-        <button type="submit" class="form__button">GET ME MY CAKE</button>
-      </form>
-      </div>
-    </section>
+      </section>
+    </div>
     <section class="cakes">
       <div class="cakes-card cakes-card--card1"></div>
       <div class="cakes-card cakes-card--card2"></div>

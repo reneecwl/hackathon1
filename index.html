@@ -1,57 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happee Birthday Harry </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <title>Happee Birthday Harry</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <div class="logo__container">Logo<img src="#" alt="" class="header__logo"></div>
-            <nav class="navbar">
-                <ul class="nav__list">
-                    <li>Home</li>
-                    <li>Rewards</li>
-                    <li>Find a store</li>
-                </ul>
-            </nav>
+      <div class="header__container">
+        <div class="logo__container">
+          Logo<img src="#" alt="" class="header__logo" />
         </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>Home</li>
+            <li>Rewards</li>
+            <li>Find a store</li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <h2 class="title">This is the title</h2>
-        
-        <div class="content">This is where we explain what this site is for</div>
+      <h2 class="title">This is the title</h2>
+      <div class="content__container">
+        <div class="content__intro">
+          Welcome to The Great Hall of Cakes!Ever wondered what kind of cake
+          your wizarding soul craves? Our magical recipe generator whisks up a
+          custom cake based on your Hogwarts house, blood status, and even your
+          Patronus! Whether you're a Muggle-born baker or a pure-blood pastry
+          master, let the Sorting Hat of sweets decide your next dessert. No
+          spells required—just a sprinkle of curiosity!
+        </div>
         <div class="">
-            <form id="" class="">
-            <label for="type-select" class="form__label">re you a Muggle or a Wizard?</label>
+          <form id="" class="form__container">
+            <label for="type-select" class="form__label"
+              >Are you a Muggle or a Wizard?</label
+            >
             <select name="types" id="type-select">
-                <option value="muggle">Muggle </option>
-                <option value="half-blood">Half-Blood</option>
-                <option value="pure-blood">Pure-Blood</option>
+              <option value="muggle">Muggle</option>
+              <option value="half-blood">Half-Blood</option>
+              <option value="pure-blood">Pure-Blood</option>
             </select>
+            <label for="date">When is your birthday?</label>
+            <input type="date" name="date" id="date" />
 
-            <label for="house-select" class="form__label">Which house do you belong to?</label>
+            <label for="house-select" class="form__label"
+              >Which house do you belong to?</label
+            >
             <select>
-                <option value="gryffindor">Gryffindor</option>
-                <option value="hufflepuff">Hufflepuff</option>
-                <option value="slytherin">Slytherin</option>
-                <option value="ravenclaw">Ravenclaw</option>
+              <option value="gryffindor">Gryffindor</option>
+              <option value="hufflepuff">Hufflepuff</option>
+              <option value="slytherin">Slytherin</option>
+              <option value="ravenclaw">Ravenclaw</option>
             </select>
 
-              <button type="submit" class="form__button">Get me my cake</button>
-         
+            <label for="subject-select" class="form__label"
+              >What is your favorite subject?</label
+            >
+            <select>
+              <option value="dark-arts">Defence Against the Dark Arts</option>
+              <option value="Potions">Potions</option>
+              <option value="charms">Charms</option>
+              <option value="transfiguration">Transfiguration</option>
+            </select>
+
+            <label for="patronus-select" class="form__label"
+              >What is your Patronus?</label
+            >
+            <select>
+              <option value="stag">Stag- Harry</option>
+              <option value="phoenix">Phoenix- Dumbledore</option>
+              <option value="otter">Otter- Hermione</option>
+              <option value="terrier">Jack Russell Terrier- Ron</option>
+              <option value="doe">Doe- Snape</option>
+              <option value="hare">Hare- Luna</option>
+              <option value="magpie">Magpie- The Weasley twins</option>
+              <option value="wolf">Wolf- Lupin</option>
+              <option value="doe">Doe- Cho Chang</option>
+            </select>
+            <label for="character-select" class="form__label"
+            >  Who is your favorite character?</label
+          >
+          <select>
+            <option value="harry">Harry Potter</option>
+            <option value="albus">Albus Dumbledore</option>
+            <option value="voldemort">Voldemort</option>
+            <option value="ron">Ron Weasley</option>
+            <option value="hermione">Hermione Granger</option>
+            <option value="snape">Severus Snape</option>
+            <option value="luna">Luna Lovegood</option>
+            <option value="neville">Neville Longbottom</option>
+            <option value="hagrid">Rubeus Hagrid</option>         </option>
+            <option value="sirius">Sirius Black</option>
+          </select>
+          
+            <button type="submit" class="form__button">Get me my cake</button>
           </form>
         </div>
+      </div>
 
-<div class="cake">
-    <div class="cake__container">
-        <div class="cake1">Cake 1</div>
-        <div class="cake2">Cake 2</div>
-        <div class="cake3">Cake 3</div>
-    </div>
-</div>
+      <div class="cake">
+        <div class="cake__container">
+          <div class="cake__card">Cake 1</div>
+          <div class="cake__card">Cake 2</div>
+          <div class="cake__card">Cake 3</div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+@use "../styles/partials/global";
+
+
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #641e1e;
+        height:5rem;
+        color:white;
+    }
+}
+
+.nav{
+    &__list{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+.content {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__intro{
+        width:50%;
+        border:3px solid #c39a1c;
+        border-radius: 1rem;
+        
+    }
+}
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    border:3px solid #c39a1c;
+    border-radius: 1rem;
+    gap:1rem;
+}
+
+.cake {
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card{
+        border:1px solid #3d2f22;
+    }
+}

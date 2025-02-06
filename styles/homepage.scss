@@ -5,6 +5,8 @@
 @use "../styles/partials/cake-cards" as *;
 @use "../styles/partials/modal" as *;
 
+
+
 .header {
   &__container {
     display: flex;
@@ -23,6 +25,15 @@
 .nav {
   width: 50%;
   padding-right: 2rem;
+
+  @include tablet-landscape {
+    width: 40%
+  }
+
+  @include desktop {
+    width: 30%;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -36,22 +47,40 @@ main {
   background-color: $sand;
 }
 
-.main__title {
+
+.great-hall {
   background-color: $beige;
-  text-align: center;
   border-radius: .5rem .5rem 0 0;
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.content {
+.hero__title {
+  background-color: $beige;
+  text-align: center;
+}
+
+.hero {
+  @include desktop {
+    width: 50%;
+
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: $beige;
-  }
-  &__intro {
+
+
+    @include desktop {
+      padding-left: 3rem;
+      padding-right: 1rem;
+    }
   }
 }
 
@@ -60,6 +89,11 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: $beige;
+  border-radius: 0 .5rem 0 0;
+
+  @include desktop {
+    width: 50%;
+  }
 
   &__title {
     text-align: center;
@@ -76,9 +110,14 @@ main {
     background-color: rgba($gryffindor-red, 0.3);
     border-radius: .5rem;
     gap: 1rem;
+
+    @include desktop {
+      width: 75%;
+    }
   }
 
   &__field {
+    margin-top: -.5rem;
     background-color: $beige;
   }
 

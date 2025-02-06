@@ -15,7 +15,7 @@
 h1 {
   font-family: "Harry Potter";
   font-size: 2rem;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   color: #4B0102;
 }
@@ -32,7 +32,7 @@ h1 {
 @media (min-width: 992px) {
   h1 {
     font-size: 2.75rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
 }
@@ -44,8 +44,19 @@ h2 {
   color: #4B0102;
 }
 
+h3 {
+  font-family: "Literata";
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #4B0102;
+}
+
 p {
   font-family: "Literata";
+  font-size: 0.75rem;
+  color: #4B0102;
+  padding-bottom: 0.5rem;
 }
 
 * {
@@ -53,6 +64,14 @@ p {
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+html {
+  background-color: #E2B16E;
+}
+
+main {
+  padding-bottom: 3rem;
 }
 
 body {
@@ -67,33 +86,57 @@ ul {
 
 .cakes {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #696969;
-  padding: 1rem;
+  background-color: #FDEBCF;
+  padding: 2rem 1rem;
   gap: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (min-width: 992px) {
+  .cakes {
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: space-evenly;
+  }
 }
 .cakes .cakes-card {
-  width: 30%;
-  background-color: white;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   align-self: stretch;
-  gap: 0.25rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .cakes .cakes-card {
+    width: 30%;
+  }
 }
 .cakes .cakes-card .cakes-card__img {
-  height: 7rem;
+  width: 50vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
 }
-.cakes .cakes-card .cakes-card__heading {
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: black;
-  margin: 0 0.5rem;
+@media (min-width: 992px) {
+  .cakes .cakes-card .cakes-card__img {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 .cakes .cakes-card .button {
-  margin: 0 0.5rem 0.25rem 0.5rem;
+  background-color: #AB3A11;
+  color: #FDEBCF;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
 }
 .cakes .cakes-card--loading {
   justify-content: space-between;
@@ -190,6 +233,16 @@ ul {
   width: 50%;
   padding-right: 2rem;
 }
+@media (min-width: 768px) {
+  .nav {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    width: 30%;
+  }
+}
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -202,25 +255,52 @@ main {
   background-color: #E2B16E;
 }
 
-.main__title {
+.great-hall {
   background-color: #FDEBCF;
-  text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
 }
+@media (min-width: 992px) {
+  .great-hall {
+    display: flex;
+    align-items: center;
+  }
+}
 
-.content__container {
+.hero__title {
+  background-color: #FDEBCF;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    width: 50%;
+  }
+}
+.hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #FDEBCF;
 }
+@media (min-width: 992px) {
+  .hero__container {
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #FDEBCF;
+  border-radius: 0 0.5rem 0 0;
+}
+@media (min-width: 992px) {
+  .form {
+    width: 50%;
+  }
 }
 .form__title {
   text-align: center;
@@ -237,7 +317,13 @@ main {
   border-radius: 0.5rem;
   gap: 1rem;
 }
+@media (min-width: 992px) {
+  .form__container {
+    width: 75%;
+  }
+}
 .form__field {
+  margin-top: -0.5rem;
   background-color: #FDEBCF;
 }
 .form__button {

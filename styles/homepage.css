@@ -1,9 +1,53 @@
 @font-face {
   font-family: "Harry Potter";
-  src: url("../../font/HarryPotter-ov4z.ttf") format("truetype");
+  src: url(../../font/HarryPotter-ov4z.ttf) format(truetype);
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Literata";
+  src: url(../../font/Literata-VariableFont_opsz\,wght.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Literata";
+  src: url(../../font/Literata-Italic-VariableFont_opsz\,wght.ttf) format(truetype);
+}
+h1 {
+  font-family: "Harry Potter";
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #4B0102;
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.75rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+h2 {
+  font-family: "Harry Potter";
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #4B0102;
+}
+
+p {
+  font-family: "Literata";
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +56,7 @@
 }
 
 body {
-  font-family: "Harry Potter";
+  font-family: "Literata";
   font-weight: 400;
   font-style: normal;
 }
@@ -21,42 +65,200 @@ ul {
   list-style: none;
 }
 
-.header__container {
+.cakes {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: #641e1e;
-  height: 5rem;
-  color: white;
+  width: 100%;
+  background-color: #696969;
+  padding: 1rem;
+  gap: 1rem;
+}
+.cakes .cakes-card {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 0.25rem;
+}
+.cakes .cakes-card .cakes-card__img {
+  height: 7rem;
+}
+.cakes .cakes-card .cakes-card__heading {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: black;
+  margin: 0 0.5rem;
+}
+.cakes .cakes-card .button {
+  margin: 0 0.5rem 0.25rem 0.5rem;
+}
+.cakes .cakes-card--loading {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  height: 10rem;
+}
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+.cakes .cakes-card--loading div {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 0.5s shine linear infinite;
+}
+.cakes .cakes-card--loading div:first-of-type {
+  width: 100%;
+  height: 50%;
+}
+.cakes .cakes-card--loading div:nth-of-type(2) {
+  width: 90%;
+  height: 30%;
+}
+.cakes .cakes-card--loading div:nth-of-type(3) {
+  width: 90%;
+  height: 10%;
 }
 
+.error-cake {
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+.modal-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay .modal {
+  position: relative;
+  z-index: 2;
+  width: 60vw;
+  height: 80vh;
+  background-color: rebeccapurple;
+  overflow: auto;
+}
+.modal-overlay .modal ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.modal-overlay .modal img {
+  cursor: pointer;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  z-index: 3;
+}
+.modal-overlay .modal p {
+  position: relative;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7E0001;
+  height: 5rem;
+  color: #FDEBCF;
+}
+
+.logo__container {
+  padding-left: 2rem;
+}
+
+.nav {
+  width: 50%;
+  padding-right: 2rem;
+}
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
 
-.content__container {
-  display: flex;
-  justify-content: space-between;
-}
-.content__intro {
-  width: 50%;
-  border: 3px solid #c39a1c;
-  border-radius: 1rem;
+main {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #E2B16E;
 }
 
+.main__title {
+  background-color: #FDEBCF;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #FDEBCF;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FDEBCF;
+}
+.form__title {
+  text-align: center;
+}
 .form__container {
   display: flex;
   flex-direction: column;
-  border: 3px solid #c39a1c;
-  border-radius: 1rem;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 70vw;
+  background-color: rgba(126, 0, 1, 0.3);
+  border-radius: 0.5rem;
   gap: 1rem;
 }
+.form__field {
+  background-color: #FDEBCF;
+}
+.form__button {
+  background-color: #AB3A11;
+  padding: 0.75rem 1.25rem;
+  color: #FDEBCF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.25rem;
+}
 
-.cake__container {
+.cakes-card {
   display: flex;
   justify-content: space-between;
+  background-color: #FDEBCF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.cake__card {
+.cakes__card {
   border: 1px solid #3d2f22;
 }/*# sourceMappingURL=homepage.css.map */

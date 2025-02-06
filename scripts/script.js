@@ -120,7 +120,7 @@ const allCakes = (async function () {
         const modalOverlay = document.querySelector(".modal-overlay.hidden");
         modalOverlay.classList.remove("hidden");
         const closeIcon = document.createElement("img");
-        closeIcon.setAttribute("src", "../assets/icons8-close.svg");
+        closeIcon.setAttribute("src", "../assets/close.svg");
         const modal = document.querySelector(".modal");
         console.log(modal);
         modal.innerHTML = "";

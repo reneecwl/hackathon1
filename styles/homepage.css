@@ -201,6 +201,9 @@ ul {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.cake__method ol li {
+  margin-top: 1rem;
+}
 
 .header__container {
   display: flex;

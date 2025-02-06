@@ -204,6 +204,16 @@ ul {
 .cake__method ol li {
   margin-top: 1rem;
 }
+.cake__method ol {
+  margin-left: 2rem;
+}
+.cake__ingredients ul {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+.cake__ingredients ul li {
+  margin-top: 1rem;
+}
 
 .header__container {
   display: flex;

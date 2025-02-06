@@ -1,3 +1,5 @@
+@use "./variables" as*;
+
 .modal-overlay {
   position: absolute;
   z-index: 1;
@@ -17,8 +19,11 @@
     z-index: 2;
     width: 60vw;
     height: 80vh;
-    background-color: rebeccapurple;
+    background-color: $sand;
+    opacity: 95%;
     overflow: auto;
+    border-radius: 1rem;
+    padding:1.5rem;
 
     ::-webkit-scrollbar {
         width: 0px;
@@ -43,4 +48,16 @@
 
 .hidden {
     display: none;
+}
+
+.cake {
+  &__description {
+    margin:1rem auto;
+    font-weight:600;
+  }
+
+&__title {
+  font-size:1.1rem;
+  font-weight: 600;
+}
 }

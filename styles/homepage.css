@@ -148,8 +148,11 @@ ul {
   z-index: 2;
   width: 60vw;
   height: 80vh;
-  background-color: rebeccapurple;
+  background-color: #E2B16E;
+  opacity: 95%;
   overflow: auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
 }
 .modal-overlay .modal ::-webkit-scrollbar {
   width: 0px;
@@ -171,6 +174,15 @@ ul {
 
 .hidden {
   display: none;
+}
+
+.cake__description {
+  margin: 1rem auto;
+  font-weight: 600;
+}
+.cake__title {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .header__container {

@@ -161,6 +161,9 @@ const formOnSubmit = async function (event) {
 
     return res;
   } catch (error) {
+    document.querySelector(
+      ".cakes"
+    ).innerHTML = `<img class="error-cake" src="../assets/image.png" alt="Server Error Cake" />`;
     console.error(error);
   }
 };

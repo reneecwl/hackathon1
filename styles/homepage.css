@@ -1,8 +1,20 @@
+@font-face {
+  font-family: "Harry Potter";
+  src: url("../../font/HarryPotter-ov4z.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+body {
+  font-family: "Harry Potter";
+  font-weight: 400;
+  font-style: normal;
 }
 
 ul {
@@ -11,7 +23,7 @@ ul {
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #641e1e;
   height: 5rem;

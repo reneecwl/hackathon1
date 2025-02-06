@@ -74,4 +74,20 @@
     font-size: 1.1rem;
     font-weight: 600;
   }
+
+  &__method ol li{
+    margin-top:1rem;
+  }
+
+  &__method ol{
+    margin-left:2rem;
+  }
+  
+  &__ingredients ul {
+    list-style-type:circle;
+    margin-left:2rem;
+  }
+  &__ingredients ul li{
+    margin-top:1rem;
+  }
 }

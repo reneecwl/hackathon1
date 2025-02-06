@@ -93,19 +93,3 @@ main {
   }
 }
 
-.cakes {
-  &-card {
-    display: flex;
-    justify-content: space-between;
-    background-color: $beige;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  &__card {
-    border: 1px solid #3d2f22;
-  }
-}
-

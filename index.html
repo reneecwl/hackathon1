@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/homepage.css" />
     <title>Happee Birthday Harry</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/birthdayCakeApi.js"></script>
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -104,68 +107,22 @@
       </div>
     </section>
     <section class="cakes">
-      <div class="cakes-card cakes-card--card1">
-        <img class="cakes-card__img" src="" alt="" />
-        <h3 class="cakes-card__heading"></h3>
-        <button class="button">See More</button>
-            <label for="patronus-select" class="form__label"
-              >What is your Patronus?</label
-            >
-            <select>
-              <option value="stag">Stag- Harry</option>
-              <option value="phoenix">Phoenix- Dumbledore</option>
-              <option value="otter">Otter- Hermione</option>
-              <option value="terrier">Jack Russell Terrier- Ron</option>
-              <option value="doe">Doe- Snape</option>
-              <option value="hare">Hare- Luna</option>
-              <option value="magpie">Magpie- The Weasley twins</option>
-              <option value="wolf">Wolf- Lupin</option>
-              <option value="doe">Doe- Cho Chang</option>
-            </select>
-            <label for="character-select" class="form__label"></label>
-              Who is your favorite character?</label
-            >
-            <select>
-              <option value="harry">Harry Potter</option>
-              <option value="albus">Albus Dumbledore</option>
-              <option value="voldemort">Voldemort</option>
-              <option value="ron">Ron Weasley</option>
-              <option value="hermione">Hermione Granger</option>
-              <option value="snape">Severus Snape</option>
-              <option value="luna">Luna Lovegood</option>
-              <option value="neville">Neville Longbottom</option>
-              <option value="hagrid">Rubeus Hagrid</option>
-              <option value="sirius">Sirius Black</option>
-            </select>
-
-            <button type="submit" class="form__button">Get me my cake</button>
-          </form>
-        </div>
-      </div>
-      <div class="cakes-card cakes-card--card2">
-        <img class="cakes-card__img" src="" alt="" />
-        <h3 class="cakes-card__heading"></h3>
-        <button class="button">See More</button>
-      </div>
-      <div class="cakes-card cakes-card--card3">
-        <img class="cakes-card__img" src="" alt="" />
-        <h3 class="cakes-card__heading"></h3>
-        <button class="button">See More</button>
-      </div>
+      <div class="cakes-card cakes-card--card1"></div>
+      <div class="cakes-card cakes-card--card2"></div>
+      <div class="cakes-card cakes-card--card3"></div>
     </section>
   </main>
-</body>
-
-      <section class="cakes">
-        <div class="cakes-card cakes-card--card1"></div>
-
-        <div class="cakes-card cakes-card--card2"></div>
-        <div class="cakes-card cakes-card--card3"></div>
-      </section>
-    </main>
+    <div class="modal-overlay hidden">
+      <div class="modal"></div>
+    </div>
 
     <div class="modal-overlay hidden">
       <div class="modal"></div>
     </div>
-  </body>
+</body>
 </html>
+      
+  
+
+    
+

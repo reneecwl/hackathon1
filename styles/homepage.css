@@ -179,7 +179,7 @@ ul {
 ::-webkit-scrollbar {
   width: 10px;
   height: 2px;
-  background-color: #E2B16E;
+  background-color: #FDEBCF;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -190,7 +190,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FDEBCF;
+  background: #E2B16E;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
@@ -213,7 +213,7 @@ ul {
   z-index: 2;
   width: 60vw;
   height: 80vh;
-  background-color: #E2B16E;
+  background-color: #FDEBCF;
   opacity: 95%;
   overflow: auto;
   border-radius: 1rem;
@@ -245,6 +245,19 @@ ul {
 .cake__title {
   font-size: 1.1rem;
   font-weight: 600;
+}
+.cake__method ol li {
+  margin-top: 1rem;
+}
+.cake__method ol {
+  margin-left: 2rem;
+}
+.cake__ingredients ul {
+  list-style-type: circle;
+  margin-left: 2rem;
+}
+.cake__ingredients ul li {
+  margin-top: 1rem;
 }
 
 .header__container {

@@ -3,7 +3,7 @@
 ::-webkit-scrollbar {
   width: 10px;
   height:2px;
-  background-color:$sand;
+  background-color:$beige;
   border-top-right-radius: 1rem;
   border-bottom-right-radius:1rem;
 }
@@ -12,7 +12,7 @@
   height:2px;
 }
 ::-webkit-scrollbar-thumb {
- background:$beige;
+ background:$sand;
  border-top-right-radius: 1rem;
  border-bottom-right-radius:1rem;
 }
@@ -37,7 +37,7 @@
     z-index: 2;
     width: 60vw;
     height: 80vh;
-    background-color: $sand;
+    background-color: $beige;
     opacity: 95%;
     overflow: auto;
     border-radius: 1rem;

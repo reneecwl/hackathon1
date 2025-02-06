@@ -131,6 +131,25 @@ ul {
   height: 10rem;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+  background-color: #E2B16E;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FDEBCF;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 .modal-overlay {
   position: absolute;
   z-index: 1;
@@ -142,6 +161,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 .modal-overlay .modal {
   position: relative;
@@ -153,16 +173,13 @@ ul {
   overflow: auto;
   border-radius: 1rem;
   padding: 1.5rem;
-}
-.modal-overlay .modal ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  position: fixed;
 }
 .modal-overlay .modal img {
   cursor: pointer;
   position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
+  top: 0.9rem;
+  right: 0.9rem;
   width: 1rem;
   height: 1rem;
   z-index: 3;

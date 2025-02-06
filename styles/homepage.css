@@ -65,6 +65,114 @@ ul {
   list-style: none;
 }
 
+.cakes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #696969;
+  padding: 1rem;
+  gap: 1rem;
+}
+.cakes .cakes-card {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 0.25rem;
+}
+.cakes .cakes-card .cakes-card__img {
+  height: 7rem;
+}
+.cakes .cakes-card .cakes-card__heading {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: black;
+  margin: 0 0.5rem;
+}
+.cakes .cakes-card .button {
+  margin: 0 0.5rem 0.25rem 0.5rem;
+}
+.cakes .cakes-card--loading {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  height: 10rem;
+}
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+.cakes .cakes-card--loading div {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 0.5s shine linear infinite;
+}
+.cakes .cakes-card--loading div:first-of-type {
+  width: 100%;
+  height: 50%;
+}
+.cakes .cakes-card--loading div:nth-of-type(2) {
+  width: 90%;
+  height: 30%;
+}
+.cakes .cakes-card--loading div:nth-of-type(3) {
+  width: 90%;
+  height: 10%;
+}
+
+.error-cake {
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+.modal-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay .modal {
+  position: relative;
+  z-index: 2;
+  width: 60vw;
+  height: 80vh;
+  background-color: rebeccapurple;
+  overflow: auto;
+}
+.modal-overlay .modal ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.modal-overlay .modal img {
+  cursor: pointer;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  z-index: 3;
+}
+.modal-overlay .modal p {
+  position: relative;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;

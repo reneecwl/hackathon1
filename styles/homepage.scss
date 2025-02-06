@@ -1,53 +1,108 @@
 @use "../styles/partials/global";
 @use "../styles/partials/typography";
-
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 
 .header {
-    &__container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #641e1e;
-        height:5rem;
-        color:white;
-    }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $gryffindor-red;
+    height: 5rem;
+    color: $beige;
+  }
 }
 
-.nav{
-    &__list{
-        display:flex;
-        justify-content: space-between;
-    }
+.logo__container {
+  padding-left: 2rem;
+}
+
+.nav {
+  width: 50%;
+  padding-right: 2rem;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+main {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: $sand;
+}
+
+.main__title {
+  background-color: $beige;
+  text-align: center;
+  border-radius: .5rem .5rem 0 0;
 }
 
 .content {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__intro{
-        width:50%;
-        border:3px solid #c39a1c;
-        border-radius: 1rem;
-        
-    }
-}
-
-.form__container{
+  &__container {
     display: flex;
     flex-direction: column;
-    border:3px solid #c39a1c;
-    border-radius: 1rem;
-    gap:1rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $beige;
+  }
+  &__intro {
+  }
 }
 
-.cake {
-    &__container{
-        display: flex;
-        justify-content: space-between;
-    }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $beige;
 
-    &__card{
-        border:1px solid #3d2f22;
-    }
+  &__title {
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 70vw;
+    background-color: rgba($gryffindor-red, 0.3);
+    border-radius: .5rem;
+    gap: 1rem;
+  }
+
+  &__field {
+    background-color: $beige;
+  }
+
+  &__button {
+    background-color: $button;
+    padding: .75rem 1.25rem;
+    color: $beige;
+    font-size: .75rem;
+    font-weight: 600;
+    border: none;
+    border-radius: .25rem;
+  }
+}
+
+.cakes {
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: $beige;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__card {
+    border: 1px solid #3d2f22;
+  }
 }

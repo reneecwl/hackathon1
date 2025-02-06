@@ -1,3 +1,4 @@
+@use "./variables" as *;
 @use "./typography";
 
 * {
@@ -8,9 +9,9 @@
   }
 
 body {
-    font-family:"Harry Potter";
-    font-weight:400;
-    font-style:normal;
+    font-family: "Literata";
+    font-weight: 400;
+    font-style: normal;
   }
 
   ul {

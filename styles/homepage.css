@@ -1,9 +1,53 @@
 @font-face {
   font-family: "Harry Potter";
-  src: url("../../font/HarryPotter-ov4z.ttf") format("truetype");
+  src: url(../../font/HarryPotter-ov4z.ttf) format(truetype);
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Literata";
+  src: url(../../font/Literata-VariableFont_opsz\,wght.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Literata";
+  src: url(../../font/Literata-Italic-VariableFont_opsz\,wght.ttf) format(truetype);
+}
+h1 {
+  font-family: "Harry Potter";
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #4B0102;
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.75rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+h2 {
+  font-family: "Harry Potter";
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: #4B0102;
+}
+
+p {
+  font-family: "Literata";
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +56,7 @@
 }
 
 body {
-  font-family: "Harry Potter";
+  font-family: "Literata";
   font-weight: 400;
   font-style: normal;
 }
@@ -23,40 +67,90 @@ ul {
 
 .header__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  background-color: #641e1e;
+  background-color: #7E0001;
   height: 5rem;
-  color: white;
+  color: #FDEBCF;
 }
 
+.logo__container {
+  padding-left: 2rem;
+}
+
+.nav {
+  width: 50%;
+  padding-right: 2rem;
+}
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
 
-.content__container {
-  display: flex;
-  justify-content: space-between;
-}
-.content__intro {
-  width: 50%;
-  border: 3px solid #c39a1c;
-  border-radius: 1rem;
+main {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #E2B16E;
 }
 
+.main__title {
+  background-color: #FDEBCF;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #FDEBCF;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FDEBCF;
+}
+.form__title {
+  text-align: center;
+}
 .form__container {
   display: flex;
   flex-direction: column;
-  border: 3px solid #c39a1c;
-  border-radius: 1rem;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 70vw;
+  background-color: rgba(126, 0, 1, 0.3);
+  border-radius: 0.5rem;
   gap: 1rem;
 }
+.form__field {
+  background-color: #FDEBCF;
+}
+.form__button {
+  background-color: #AB3A11;
+  padding: 0.75rem 1.25rem;
+  color: #FDEBCF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.25rem;
+}
 
-.cake__container {
+.cakes-card {
   display: flex;
   justify-content: space-between;
+  background-color: #FDEBCF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.cake__card {
+.cakes__card {
   border: 1px solid #3d2f22;
 }/*# sourceMappingURL=homepage.css.map */
